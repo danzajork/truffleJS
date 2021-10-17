@@ -25,8 +25,8 @@ import termcolor
 from bs4 import BeautifulSoup
 
 parse = argparse.ArgumentParser()
-parse.add_argument('-l', '--listfile', help="List file which contain list of URLs to be scanned for subdomains")
-parse.add_argument('-u', '--url', help="Enter the URL in which you want to find (sub)domains.")
+parse.add_argument('-l', '--listfile', help="List file which contain list of URLs to be scanned for secrets.")
+parse.add_argument('-u', '--url', help="Enter the URL in which you want to find secrets.")
 parse.add_argument('-d', '--disable_entropy', help="Disable high entropy checks.")
 
 args = parse.parse_args()
